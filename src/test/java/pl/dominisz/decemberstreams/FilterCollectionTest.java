@@ -21,5 +21,4 @@ public class FilterCollectionTest {
         assertEquals(expected, transform(collection));
         assertEquals(expected, transform(collection));
     }
-
 }
