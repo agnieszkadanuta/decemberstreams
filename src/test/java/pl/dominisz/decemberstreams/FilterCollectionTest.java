@@ -19,6 +19,7 @@ public class FilterCollectionTest {
         List<String> collection = asList("My", "name", "is", "John", "Doe");
         List<String> expected = asList("My", "is", "Doe");
         assertEquals(expected, transform(collection));
+        assertEquals(expected, transform(collection));
     }
 
 }
