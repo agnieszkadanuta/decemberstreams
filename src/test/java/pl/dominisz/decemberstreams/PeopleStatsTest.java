@@ -8,6 +8,7 @@ import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static pl.dominisz.decemberstreams.PeopleStats.getStats;
+import static pl.dominisz.decemberstreams.PeopleStats.getStats7;
 
 /*
 Get people statistics: average age, count, maximum age, minimum age and sum og all ages.

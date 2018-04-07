@@ -8,6 +8,7 @@ import java.util.Map;
 import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static pl.dominisz.decemberstreams.Partitioning.partitionAdults;
+import static pl.dominisz.decemberstreams.Partitioning.partitionAdults7;
 
 /*
 Partition adults and kids
@@ -20,9 +21,9 @@ public class PartitioningTest {
         Person viktor = new Person("Viktor", 40);
         Person eva = new Person("Eva", 42);
         List<Person> collection = asList(sara, eva, viktor);
-        Map<Boolean, List<Person>> result = partitionAdults(collection);
-        assertEquals(result.get(true), asList(eva, viktor));
-        assertEquals(result.get(false), asList(sara));
+        Map<Boolean, List<Person>> result = partitionAdults7(collection);
+        assertEquals(asList(eva, viktor), result.get(true));
+        assertEquals(asList(sara), result.get(false));
     }
 
 }
